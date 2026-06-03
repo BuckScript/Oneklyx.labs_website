@@ -354,44 +354,44 @@ class OrderFormWizard {
     if (loadingState) loadingState.classList.add('show');
 
     try {
-      const formData = new FormData();
       const data = this.collectFormData();
 
-      // Append fields
-      formData.append('fullName', data.fullName);
-      formData.append('email', data.email);
-      formData.append('whatsapp', data.whatsapp);
-      formData.append('company', data.company);
-      formData.append('projectType', data.projectType);
-      formData.append('budget', data.budget);
-      formData.append('projectTitle', data.projectTitle);
-      formData.append('projectDesc', data.projectDesc);
-      formData.append('deadline', data.deadline);
-      formData.append('referenceLinks', JSON.stringify(data.referenceLinks));
-      formData.append('techStack', JSON.stringify(data.techStack));
+      const payload = {
+        fullName: data.fullName,
+        email: data.email,
+        whatsapp: data.whatsapp,
+        company: data.company,
+        projectType: data.projectType,
+        budget: data.budget,
+        projectTitle: data.projectTitle,
+        projectDesc: data.projectDesc,
+        deadline: data.deadline,
+        referenceLinks: data.referenceLinks,
+        techStack: data.techStack
+      };
 
-      // Append uploaded file if exists
+      // If there's a file, read it as base64 and include in payload
       if (this.formData.file) {
-        formData.append('file', this.formData.file);
+        const base64 = await this.readFileAsBase64(this.formData.file);
+        payload.fileData = base64;
+        payload.fileName = this.formData.file.name;
+        payload.fileType = this.formData.file.type;
       }
 
       const response = await fetch('/api/orders', {
         method: 'POST',
-        body: formData
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
       });
 
       const result = await response.json();
 
       if (response.ok && result.success) {
-        // Show success state
         if (loadingState) loadingState.classList.remove('show');
         if (successState) successState.classList.add('show');
 
-        // Update the WhatsApp chat button with the dynamic link containing the order reference
         const waBtn = successState.querySelector('a[href^="https://wa.me"]');
-        if (waBtn && result.whatsappUrl) {
-          waBtn.href = result.whatsappUrl;
-        }
+        if (waBtn && result.whatsappUrl) waBtn.href = result.whatsappUrl;
 
         console.log('Order submitted successfully:', result);
       } else {
@@ -406,6 +406,20 @@ class OrderFormWizard {
 
       alert(error.message || 'Gagal mengirim pesanan. Silakan periksa koneksi server Anda.');
     }
+  }
+
+  readFileAsBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const result = reader.result || '';
+        // result is data:<mime>;base64,xxxx
+        const parts = result.split(',');
+        resolve(parts[1] || '');
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
   }
 }
 

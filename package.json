@@ -2,16 +2,14 @@
   "name": "oneklyx-website",
   "version": "1.0.0",
   "description": "OneKlyx Website with Express Backend",
-  "main": "server.js",
+  "main": "index.html",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "vercel dev",
+    "dev": "vercel dev"
   },
   "dependencies": {
-    "cors": "^2.8.5",
+    "@supabase/supabase-js": "^2.33.0",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.13"
   }
 }
