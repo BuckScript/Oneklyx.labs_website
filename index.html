@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>OneKlyx — Build. Adapt. Grow. | Premium Technology Solutions</title>
+  <meta name="description"
+    content="OneKlyx is a premium technology company offering Web Development, Mobile Apps, Cloud & Infrastructure, Cybersecurity, AI & Automation, Data Analytics, UI/UX Design, IT Consulting, and Research Solutions.">
+  <meta name="keywords"
+    content="OneKlyx, web development, mobile app, cloud, cybersecurity, AI, automation, data analytics, UI/UX, IT consulting, research, Indonesia">
+  <meta name="author" content="OneKlyx">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OneKlyx — Build. Adapt. Grow.">
+  <meta property="og:description" content="Turning ideas into secure, scalable, and intelligent digital solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oneklyx.com">
+  <meta property="og:site_name" content="OneKlyx">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OneKlyx — Build. Adapt. Grow.">
+  <meta name="twitter:description" content="Turning ideas into secure, scalable, and intelligent digital solutions.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo oneklyx.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OneKlyx",
+    "url": "https://oneklyx.com",
+    "description": "Premium technology company offering Web Development, Mobile Apps, Cloud, Cybersecurity, AI, and Research Solutions.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "availableLanguage": ["Indonesian", "English"]
+    },
+    "sameAs": [
+      "https://www.instagram.com/oneklyx.coding/",
+      "https://linkedin.com/company/oneklyx",
+      "https://github.com/oneklyx"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ============================================
+       PRELOADER
+       ============================================ -->
+  <div id="preloader"
+    style="position:fixed;inset:0;background:#060912;z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity 0.5s ease;">
+    <div style="text-align:center;">
+      <div class="spinner"></div>
+      <p style="font-family:'Orbitron',sans-serif;font-size:14px;color:#0066ff;letter-spacing:4px;margin-top:16px;">
+        ONEKLYX</p>
+    </div>
+  </div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#hero" class="nav-logo" aria-label="OneKlyx Home">
+        <img src="assets/logo oneklyx.png" alt="OneKlyx Logo" class="okx-logo-img">
+        <span>ONEKLYX</span>
+      </a>
+
+      <div class="nav-links" role="menubar">
+        <a href="#services" role="menuitem">Services</a>
+        <a href="#about" role="menuitem">About</a>
+        <a href="#portfolio" role="menuitem">Portfolio</a>
+        <a href="#process" role="menuitem">Process</a>
+        <a href="#contact" role="menuitem">Contact</a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="#order" class="btn btn-primary btn-sm" data-scroll-to="#order">
+          Start a Project <span class="arrow">→</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+    <a href="#order" class="btn btn-primary" style="margin-top:16px;">Start a Project →</a>
+  </div>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <!-- Kintamani Mascot Image -->
+      <div class="hero-mascot" aria-hidden="true">
+        <img src="assets/mascot.png" alt="Kintamani Dog - OneKlyx Mascot">
+      </div>
+
+      <p class="hero-eyebrow" data-words="Technology,AI,Cloud,Security,Innovation">
+        Technology <span>·</span> AI <span>·</span> Cloud <span>·</span> Security
+      </p>
+
+      <h1 class="hero-title">
+        Build. <span class="gradient">Adapt.</span> Grow.
+      </h1>
+
+      <p class="hero-subtitle">
+        Turning ideas into secure, scalable, and intelligent digital solutions.
+      </p>
+      <p class="hero-supporting">
+        We help startups, businesses, and institutions transform through modern technology.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#order" class="btn btn-primary btn-lg" data-scroll-to="#order">
+          Start a Project <span class="arrow">→</span>
+        </a>
+        <a href="#contact" class="btn btn-ghost btn-lg" data-scroll-to="#contact">
+          Schedule Consultation
+        </a>
+      </div>
+
+      <div class="social-proof">
+        <div class="proof-item">
+          <span>Trusted by 100+ clients across Indonesia</span>
+        </div>
+        <div class="proof-item">
+          <span class="stars">★★★★★</span>
+          <span>5.0 Rating</span>
+        </div>
+        <div class="tech-stack-icons">
+          <div class="tech-icon" title="React">⚛</div>
+          <div class="tech-icon" title="Flutter">◆</div>
+          <div class="tech-icon" title="Python">🐍</div>
+          <div class="tech-icon" title="AWS">☁</div>
+          <div class="tech-icon" title="TensorFlow">🧠</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES SECTION
+       ============================================ -->
+  <section class="services section" id="services" aria-label="Services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title">Our <span class="gradient">Services</span></h2>
+        <p class="section-subtitle">End-to-end technology solutions crafted for startups, enterprises, and academic
+          institutions.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal reveal-delay-1" role="tablist" aria-label="Service categories">
+        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-tab" data-filter="web-app" role="tab">Web & App</button>
+        <button class="filter-tab" data-filter="data-ai" role="tab">Data & AI</button>
+        <button class="filter-tab" data-filter="cloud-devops" role="tab">Cloud & DevOps</button>
+        <button class="filter-tab" data-filter="design" role="tab">Design</button>
+        <button class="filter-tab" data-filter="security" role="tab">Security</button>
+        <button class="filter-tab" data-filter="academic" role="tab">Academic</button>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="services-grid">
+
+        <!-- 1. Web Development -->
+        <div class="glass-card service-card reveal reveal-delay-1" data-category="web-app">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+              <line x1="14" y1="4" x2="10" y2="20" />
+            </svg>
+          </div>
+          <h3 class="card-title">Web Development</h3>
+          <p class="card-desc">Company sites, portals, web apps, and CMS. Modern, responsive, and performance-optimized.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Vue</span>
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">Django</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>From landing pages to complex enterprise web applications. We build with modern frameworks and ensure
+              optimal performance, SEO, and user experience across all devices.</p>
+          </div>
+        </div>
+
+        <!-- 2. Mobile Application -->
+        <div class="glass-card service-card reveal reveal-delay-2" data-category="web-app">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" />
+            </svg>
+          </div>
+          <h3 class="card-title">Mobile Application</h3>
+          <p class="card-desc">Android, iOS, and cross-platform apps with seamless user experience and native
+            performance.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">Kotlin</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>Cross-platform and native mobile solutions. From MVP prototypes to production-grade applications with
+              push notifications, offline support, and seamless backend integration.</p>
+          </div>
+        </div>
+
+        <!-- 3. Cloud & Infrastructure -->
+        <div class="glass-card service-card reveal reveal-delay-3" data-category="cloud-devops">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+            </svg>
+          </div>
+          <h3 class="card-title">Cloud & Infrastructure</h3>
+          <p class="card-desc">Hosting, VPS, deployment pipelines, and auto-scaling infrastructure for modern
+            applications.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">GCP</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">CI/CD</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>Cloud migration, container orchestration, and infrastructure as code. We design resilient architectures
+              that scale automatically and minimize operational overhead.</p>
+          </div>
+        </div>
+
+        <!-- 4. Cybersecurity -->
+        <div class="glass-card service-card reveal reveal-delay-1" data-category="security">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3 class="card-title">Cybersecurity</h3>
+          <p class="card-desc">Security assessment, vulnerability testing, and hardening for your digital
+            infrastructure.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Pentest</span>
+            <span class="tech-tag">VAPT</span>
+            <span class="tech-tag">Hardening</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>Comprehensive security audits, penetration testing, and remediation. We identify vulnerabilities before
+              attackers do and implement defense-in-depth strategies.</p>
+          </div>
+        </div>
+
+        <!-- 5. AI & Automation -->
+        <div class="glass-card service-card reveal reveal-delay-2" data-category="data-ai">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z" />
+              <circle cx="12" cy="14" r="2" />
+            </svg>
+          </div>
+          <h3 class="card-title">AI & Automation</h3>
+          <p class="card-desc">Chatbots, ML models, LLM integration, and workflow automation for business efficiency.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">LLM</span>
+            <span class="tech-tag">n8n</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>Leverage artificial intelligence to automate repetitive tasks, build intelligent chatbots, and create
+              predictive models that drive business decisions.</p>
+          </div>
+        </div>
+
+        <!-- 6. Data & Analytics -->
+        <div class="glass-card service-card reveal reveal-delay-3" data-category="data-ai">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg>
+          </div>
+          <h3 class="card-title">Data & Analytics</h3>
+          <p class="card-desc">Dashboards, business intelligence, data science, and visualization for data-driven
+            decisions.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">SPSS</span>
+            <span class="tech-tag">Tableau</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>Transform raw data into actionable insights. Interactive dashboards, statistical analysis, and data
+              pipelines that empower smarter business decisions.</p>
+          </div>
+        </div>
+
+        <!-- 7. UI/UX Design -->
+        <div class="glass-card service-card reveal reveal-delay-1" data-category="design">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 19l7-7 3 3-7 7-3-3z" />
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+              <path d="M2 2l7.586 7.586" />
+              <circle cx="11" cy="11" r="2" />
+            </svg>
+          </div>
+          <h3 class="card-title">UI/UX Design</h3>
+          <p class="card-desc">Design systems, mockups, wireframes, prototypes, and user research for exceptional
+            experiences.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Wireframe</span>
+            <span class="tech-tag">Prototype</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>User-centered design that delights. From research and wireframing to high-fidelity prototypes and
+              comprehensive design systems.</p>
+          </div>
+        </div>
+
+        <!-- 8. IT Consulting -->
+        <div class="glass-card service-card reveal reveal-delay-2" data-category="cloud-devops">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+          </div>
+          <h3 class="card-title">IT Consulting</h3>
+          <p class="card-desc">Digital transformation strategy, technology advisory, and architecture planning.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Architecture</span>
+            <span class="tech-tag">Strategy</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>Strategic technology guidance for businesses navigating digital transformation. We assess your current
+              stack, identify opportunities, and plan for future growth.</p>
+          </div>
+        </div>
+
+        <!-- 9. Research & Academic -->
+        <div class="glass-card service-card reveal reveal-delay-3" data-category="academic">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+          </div>
+          <h3 class="card-title">Research & Academic</h3>
+          <p class="card-desc">Thesis projects (Skripsi/Tesis), system development, data analysis, and IEEE papers.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Skripsi</span>
+            <span class="tech-tag">Tesis</span>
+            <span class="tech-tag">Paper</span>
+          </div>
+          <button class="learn-more" aria-expanded="false">Learn More →</button>
+          <div class="card-details">
+            <p>Academic project support from proposal to defense. System development, data analysis using SPSS or
+              Python, and research paper writing following IEEE standards.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ORDER FORM SECTION
+       ============================================ -->
+  <section class="order-section section" id="order" aria-label="Order Form">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Start Building</p>
+        <h2 class="section-title">Start a <span class="gradient">Project</span></h2>
+        <p class="section-subtitle">Tell us about your project and we'll get back to you within 24 hours.</p>
+      </div>
+
+      <div class="order-form-wrapper">
+        <!-- Progress Indicator -->
+        <div class="form-progress reveal">
+          <div class="progress-step active">
+            <div class="step-number">1</div>
+            <span class="step-label">Project Info</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step">
+            <div class="step-number">2</div>
+            <span class="step-label">Details</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step">
+            <div class="step-number">3</div>
+            <span class="step-label">Confirm</span>
+          </div>
+        </div>
+
+        <div class="glass-card reveal" id="formCard">
+          <div id="formSteps">
+
+            <!-- ===== STEP 1: Project Info ===== -->
+            <div class="form-step active" data-step="1">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full Name <span class="required">*</span></label>
+                  <input type="text" id="fullName" class="form-input" placeholder="Enter your full name" required
+                    autocomplete="name">
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" class="form-input" placeholder="your@email.com" required
+                    autocomplete="email">
+                  <span class="error-message"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="whatsapp">WhatsApp Number <span class="required">*</span></label>
+                  <input type="tel" id="whatsapp" class="form-input" placeholder="+62 812 3456 7890" required
+                    autocomplete="tel">
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="company">Company / Institution</label>
+                  <input type="text" id="company" class="form-input" placeholder="Optional" autocomplete="organization">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectType">Project Type <span class="required">*</span></label>
+                <select id="projectType" class="form-select" required>
+                  <option value="">Select project type...</option>
+                  <option value="web-app">Web Application</option>
+                  <option value="mobile-app">Mobile Application</option>
+                  <option value="ai-solution">AI Solution</option>
+                  <option value="data-analytics">Data Analytics</option>
+                  <option value="cybersecurity">Cybersecurity</option>
+                  <option value="ui-ux">UI/UX Design</option>
+                  <option value="cloud">Cloud Setup</option>
+                  <option value="consulting">IT Consulting</option>
+                  <option value="academic">Academic / Research</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label>Budget Range <span class="required">*</span></label>
+                <div class="radio-group">
+                  <div class="radio-option">
+                    <input type="radio" name="budget" id="budget1" value="<500k">
+                    <label for="budget1">&lt; Rp 500K</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" name="budget" id="budget2" value="500k-2jt">
+                    <label for="budget2">Rp 500K–2JT</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" name="budget" id="budget3" value="2jt-5jt">
+                    <label for="budget3">Rp 2JT–5JT</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" name="budget" id="budget4" value="5jt-20jt">
+                    <label for="budget4">Rp 5JT–20JT</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" name="budget" id="budget5" value=">20jt">
+                    <label for="budget5">&gt; Rp 20JT</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" name="budget" id="budget6" value="discuss">
+                    <label for="budget6">Discuss</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-nav">
+                <div></div>
+                <button class="btn btn-primary" data-form-next>
+                  Next Step <span class="arrow">→</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- ===== STEP 2: Project Details ===== -->
+            <div class="form-step" data-step="2">
+              <div class="form-group">
+                <label for="projectTitle">Project Title / Name <span class="required">*</span></label>
+                <input type="text" id="projectTitle" class="form-input" placeholder="e.g., E-commerce Platform for SME">
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="projectDesc">Project Description <span class="required">*</span></label>
+                <textarea id="projectDesc" class="form-textarea"
+                  placeholder="Describe your project requirements, goals, and expected features... (minimum 50 characters)"
+                  rows="5"></textarea>
+                <span class="error-message"></span>
+                <p id="charCount" style="font-size:12px;color:var(--color-text-muted);margin-top:4px;">0/50 karakter
+                  minimum</p>
+              </div>
+
+              <div class="form-group">
+                <label for="deadline">Target Deadline</label>
+                <input type="date" id="deadline" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label>Reference Links <span style="color:var(--color-text-muted);font-weight:400;">(optional, up to
+                    3)</span></label>
+                <input type="url" id="ref1" class="form-input" placeholder="https://example.com"
+                  style="margin-bottom:8px;">
+                <input type="url" id="ref2" class="form-input" placeholder="https://example.com"
+                  style="margin-bottom:8px;">
+                <input type="url" id="ref3" class="form-input" placeholder="https://example.com">
+              </div>
+
+              <div class="form-group">
+                <label>Upload Document / Wireframe <span
+                    style="color:var(--color-text-muted);font-weight:400;">(optional, max 10MB)</span></label>
+                <div class="file-upload-area">
+                  <div class="upload-icon">📁</div>
+                  <p>Click or drag file here (PDF, PNG, JPG)</p>
+                  <p class="file-name" id="fileName"></p>
+                </div>
+                <input type="file" id="fileUpload" accept=".pdf,.png,.jpg,.jpeg" hidden>
+              </div>
+
+              <div class="form-group">
+                <label>Tech Stack Preference</label>
+                <div class="chip-group">
+                  <span class="chip" data-value="React">React</span>
+                  <span class="chip" data-value="Flutter">Flutter</span>
+                  <span class="chip" data-value="Python">Python</span>
+                  <span class="chip" data-value="PHP">PHP</span>
+                  <span class="chip" data-value="Node.js">Node.js</span>
+                  <span class="chip" data-value="Java">Java</span>
+                  <span class="chip" data-value="No Preference">No Preference</span>
+                </div>
+              </div>
+
+              <div class="form-nav">
+                <button class="btn btn-ghost" data-form-prev>
+                  ← Previous
+                </button>
+                <button class="btn btn-primary" data-form-next>
+                  Next Step <span class="arrow">→</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- ===== STEP 3: Confirmation ===== -->
+            <div class="form-step" data-step="3">
+              <h3 style="font-family:var(--font-display);font-size:1.25rem;margin-bottom:1.5rem;">Order Summary</h3>
+
+              <div class="summary-card" id="orderSummary">
+                <!-- Populated by JS -->
+              </div>
+
+              <div class="checkbox-group" style="margin-bottom:1.5rem;">
+                <input type="checkbox" id="termsCheck">
+                <label for="termsCheck">
+                  I agree to the <a href="#" style="color:var(--color-accent-blue);text-decoration:underline;">Terms &
+                    Conditions</a> and understand that OneKlyx will contact me regarding this project inquiry.
+                </label>
+              </div>
+
+              <div class="form-nav">
+                <button class="btn btn-ghost" data-form-prev>
+                  ← Previous
+                </button>
+                <button class="btn btn-primary btn-lg" data-form-submit>
+                  Submit Order <span class="arrow">→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loading State -->
+          <div class="loading-state" id="loadingState">
+            <div class="spinner"></div>
+            <p>Sending your project details...</p>
+          </div>
+
+          <!-- Success State -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00cc88" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12">
+                  <animate attributeName="stroke-dasharray" from="0 30" to="30 0" dur="0.8s" fill="freeze" />
+                </polyline>
+              </svg>
+            </div>
+            <h3>Order Received! 🎉</h3>
+            <p>Thank you for reaching out. We'll contact you within <strong>24 hours</strong> via WhatsApp or email.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="https://wa.me/62881080621723" target="_blank" class="btn btn-primary">
+                💬 Chat on WhatsApp
+              </a>
+              <a href="#hero" class="btn btn-ghost" data-scroll-to="#hero">
+                Back to Home
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section class="about-section section" id="about" aria-label="About OneKlyx">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="section-eyebrow">About Us</p>
+          <h2>We Build the Future of <span class="text-gradient">Digital Solutions</span></h2>
+          <p>OneKlyx is a premium technology company dedicated to transforming ideas into secure, scalable, and
+            intelligent digital products. We serve startups, enterprises, and academic institutions across Indonesia.
+          </p>
+          <p class="about-quote">"The ones who survive are not the strongest, but the most adaptable."</p>
+          <p>Our mascot, the Kintamani dog, embodies our core values: resilience, intelligence, and adaptation. Just
+            like the Kintamani, we navigate complex challenges with agility and precision.</p>
+        </div>
+        <div class="about-visual reveal reveal-delay-2">
+          <img src="assets/mascot.png" alt="Kintamani Dog - OneKlyx Mascot" class="mascot-img">
+        </div>
+      </div>
+
+      <!-- Stats Counters -->
+      <div class="stats-grid">
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-number" data-count="100" data-suffix="+">0+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-number" data-count="50" data-suffix="+">0+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-number" data-count="5" data-suffix="+">0+</div>
+          <div class="stat-label">Industries Served</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-4">
+          <div class="stat-number" data-count="3" data-suffix="+">0+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline reveal">
+        <div class="timeline-track">
+          <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-desc">OneKlyx Founded</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-desc">First Enterprise Project</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-desc">AI & Cloud Services Launched</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-desc">Academic Solutions Division</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-desc">Cybersecurity Practice Added</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-desc">Regional Expansion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHY CHOOSE US SECTION
+       ============================================ -->
+  <section class="why-us-section section" id="why-us" aria-label="Why Choose Us">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Why Choose Us</p>
+        <h2 class="section-title">Built Different, <span class="gradient">Built Better</span></h2>
+        <p class="section-subtitle">Four pillars that define every solution we deliver.</p>
+      </div>
+
+      <div class="why-us-grid">
+        <div class="glass-card why-card reveal reveal-delay-1">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+              <line x1="12" y1="22.08" x2="12" y2="12" />
+            </svg>
+          </div>
+          <h3>Adaptive</h3>
+          <p>Technology that evolves with your business needs. We build flexible systems that grow alongside your
+            ambitions.</p>
+        </div>
+
+        <div class="glass-card why-card reveal reveal-delay-2">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3>Secure</h3>
+          <p>Built with cybersecurity best practices from day one. Every line of code is written with security in mind.
+          </p>
+        </div>
+
+        <div class="glass-card why-card reveal reveal-delay-3">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <h3>Scalable</h3>
+          <p>Architecture ready for growth from MVP to enterprise. We design systems that handle millions of users.</p>
+        </div>
+
+        <div class="glass-card why-card reveal reveal-delay-4">
+          <div class="why-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+              <path d="M2 12h20" />
+            </svg>
+          </div>
+          <h3>Innovative</h3>
+          <p>Leveraging cutting-edge AI and modern tech stacks. We stay ahead so your solutions are never behind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROCESS SECTION
+       ============================================ -->
+  <section class="process-section section" id="process" aria-label="Our Process">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">How We Work</p>
+        <h2 class="section-title">Our <span class="gradient">Process</span></h2>
+        <p class="section-subtitle">A proven 5-step engagement model designed for clarity and results.</p>
+      </div>
+
+      <div class="process-roadmap">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-node">01</div>
+          <div class="step-connector"></div>
+          <div class="process-step-content">
+            <h3>Discover</h3>
+            <p>Deep-dive into your goals, requirements, and constraints</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-node">02</div>
+          <div class="step-connector"></div>
+          <div class="process-step-content">
+            <h3>Plan</h3>
+            <p>Architecture, timeline, tech stack, and sprint planning</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-node">03</div>
+          <div class="step-connector"></div>
+          <div class="process-step-content">
+            <h3>Build</h3>
+            <p>Agile development with weekly demos and updates</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="step-node">04</div>
+          <div class="step-connector"></div>
+          <div class="process-step-content">
+            <h3>Deploy</h3>
+            <p>Production release, testing, monitoring, and handover</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-5">
+          <div class="step-node">05</div>
+          <div class="step-connector"></div>
+          <div class="process-step-content">
+            <h3>Grow</h3>
+            <p>Ongoing support, scaling, and continuous improvement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PORTFOLIO SECTION
+       ============================================ -->
+  <section class="portfolio-section section" id="portfolio" aria-label="Portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Work</p>
+        <h2 class="section-title">Featured <span class="gradient">Projects</span></h2>
+        <p class="section-subtitle">A selection of projects that showcase our technical expertise and design craft.</p>
+      </div>
+
+      <!-- Portfolio Filter -->
+      <div class="filter-tabs portfolio-filter reveal" role="tablist" aria-label="Portfolio categories">
+        <button class="filter-tab active" data-filter="all" role="tab">All</button>
+        <button class="filter-tab" data-filter="website" role="tab">Website</button>
+        <button class="filter-tab" data-filter="mobile" role="tab">Mobile App</button>
+        <button class="filter-tab" data-filter="ai" role="tab">AI</button>
+        <button class="filter-tab" data-filter="cloud" role="tab">Cloud</button>
+        <button class="filter-tab" data-filter="security" role="tab">Security</button>
+        <button class="filter-tab" data-filter="academic" role="tab">Academic</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+
+        <div class="glass-card portfolio-card reveal reveal-delay-1" data-category="website"
+          data-description="A full-featured e-commerce platform built with React and Node.js, featuring payment gateway integration, real-time inventory management, and an admin dashboard.">
+          <div class="portfolio-thumb">
+            <div class="thumb-icon">🛒</div>
+            <div class="thumb-overlay">
+              <button class="btn btn-primary btn-sm view-btn">View Case Study →</button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-badge">Website</span>
+            <h3>E-Commerce Platform</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card portfolio-card reveal reveal-delay-2" data-category="academic"
+          data-description="Comprehensive university information system handling student enrollment, grade management, scheduling, and academic reporting. Built for a private university in Bali.">
+          <div class="portfolio-thumb">
+            <div class="thumb-icon">🎓</div>
+            <div class="thumb-overlay">
+              <button class="btn btn-primary btn-sm view-btn">View Case Study →</button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-badge">Academic</span>
+            <h3>University Information System</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Vue</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card portfolio-card reveal reveal-delay-3" data-category="ai"
+          data-description="Intelligent chatbot powered by large language models, designed for SME customer service. Handles FAQ, order tracking, and escalation to human agents.">
+          <div class="portfolio-thumb">
+            <div class="thumb-icon">🤖</div>
+            <div class="thumb-overlay">
+              <button class="btn btn-primary btn-sm view-btn">View Case Study →</button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-badge">AI</span>
+            <h3>AI Chatbot for SME</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LLM</span>
+              <span class="tech-tag">FastAPI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card portfolio-card reveal reveal-delay-1" data-category="security"
+          data-description="Real-time dashboard for tracking penetration testing results, vulnerability assessments, and security compliance metrics across multiple client environments.">
+          <div class="portfolio-thumb">
+            <div class="thumb-icon">🔒</div>
+            <div class="thumb-overlay">
+              <button class="btn btn-primary btn-sm view-btn">View Case Study →</button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-badge">Security</span>
+            <h3>Pentest Report Dashboard</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">D3.js</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card portfolio-card reveal reveal-delay-2" data-category="mobile"
+          data-description="Cross-platform banking application built with Flutter, featuring biometric authentication, real-time transaction tracking, QR payments, and virtual card management.">
+          <div class="portfolio-thumb">
+            <div class="thumb-icon">🏦</div>
+            <div class="thumb-overlay">
+              <button class="btn btn-primary btn-sm view-btn">View Case Study →</button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-badge">Mobile App</span>
+            <h3>Flutter Banking App</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card portfolio-card reveal reveal-delay-3" data-category="cloud"
+          data-description="Interactive data analytics dashboard processing millions of records in real-time, with dynamic filtering, export capabilities, and scheduled reporting.">
+          <div class="portfolio-thumb">
+            <div class="thumb-icon">📊</div>
+            <div class="thumb-overlay">
+              <button class="btn btn-primary btn-sm view-btn">View Case Study →</button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-badge">Data</span>
+            <h3>Data Analytics Dashboard</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">AWS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Modal -->
+  <div class="modal-overlay" id="portfolioModal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <span class="portfolio-badge modal-project-category" style="margin-bottom:16px;"></span>
+      <h2 class="modal-project-title" style="font-family:var(--font-display);font-size:1.5rem;margin-bottom:12px;"></h2>
+      <p class="modal-project-desc" style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:20px;"></p>
+      <div class="modal-project-tags" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       TESTIMONIALS SECTION
+       ============================================ -->
+  <section class="testimonials-section section" id="testimonials" aria-label="Testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Client Voices</p>
+        <h2 class="section-title">What Our <span class="gradient">Clients Say</span></h2>
+        <p class="section-subtitle">Real feedback from teams and founders we've partnered with.</p>
+      </div>
+    </div>
+
+    <div class="testimonial-track">
+      <div class="testimonial-slider">
+
+        <div class="glass-card testimonial-card">
+          <div class="tc-header">
+            <div class="tc-avatar">AR</div>
+            <div class="tc-info">
+              <h4>Andi Rahmat</h4>
+              <p>CEO, TechVenture Indonesia</p>
+            </div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"OneKlyx delivered our e-commerce platform in just 3 weeks. The quality exceeded our
+            expectations. Their attention to detail and communication were exceptional."</p>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <div class="tc-header">
+            <div class="tc-avatar">SP</div>
+            <div class="tc-info">
+              <h4>Sari Putri</h4>
+              <p>Founder, BaliGo</p>
+            </div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"The mobile app they built for us has been downloaded 10K+ times. The Flutter expertise and
+            UI/UX design were top-notch. Highly recommended!"</p>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <div class="tc-header">
+            <div class="tc-avatar">BW</div>
+            <div class="tc-info">
+              <h4>Budi Wijaya</h4>
+              <p>IT Manager, PT Sejahtera</p>
+            </div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"Their cybersecurity assessment identified critical vulnerabilities we never knew existed.
+            Professional, thorough, and the remediation plan was crystal clear."</p>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <div class="tc-header">
+            <div class="tc-avatar">DK</div>
+            <div class="tc-info">
+              <h4>Dewi Kusuma</h4>
+              <p>Mahasiswa, Universitas Udayana</p>
+            </div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"Mereka membantu skripsi saya dari awal sampai akhir. Sistem yang dibangun bekerja sempurna
+            dan dosen pembimbing sangat terkesan. Terima kasih OneKlyx!"</p>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <div class="tc-header">
+            <div class="tc-avatar">RH</div>
+            <div class="tc-info">
+              <h4>Reza Hidayat</h4>
+              <p>CTO, FinStack</p>
+            </div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"The AI chatbot they built handles 80% of our customer inquiries automatically. The
+            integration with our existing systems was seamless."</p>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <div class="tc-header">
+            <div class="tc-avatar">MA</div>
+            <div class="tc-info">
+              <h4>Maya Anggraini</h4>
+              <p>Product Manager, CloudFirst</p>
+            </div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"Their cloud migration expertise saved us 40% on infrastructure costs while improving
+            performance. The Docker and CI/CD setup was impeccable."</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ SECTION
+       ============================================ -->
+  <section class="faq-section section" id="faq" aria-label="FAQ">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">FAQ</p>
+        <h2 class="section-title">Frequently <span class="gradient">Asked Questions</span></h2>
+        <p class="section-subtitle">Everything you need to know about working with OneKlyx.</p>
+      </div>
+
+      <div class="faq-grid">
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            <span>Berapa lama waktu pengerjaan proyek?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Waktu pengerjaan bervariasi tergantung kompleksitas proyek. Website sederhana biasanya 1-2 minggu, web app
+              2-6 minggu, dan mobile app 4-8 minggu. Kami akan memberikan timeline detail setelah konsultasi awal.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question" aria-expanded="false">
+            <span>Bagaimana sistem pembayaran OneKlyx?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Kami menggunakan sistem milestone. Biasanya 50% DP di awal, dan 50% setelah proyek selesai. Untuk proyek
+              besar, bisa dicicil menjadi 3-4 tahap pembayaran sesuai progress.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            <span>Apakah ada garansi setelah proyek selesai?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Ya! Kami memberikan garansi bug-fix selama 30 hari setelah delivery. Selama periode ini, perbaikan bug
+              bersifat gratis. Kami juga menawarkan paket maintenance bulanan untuk support berkelanjutan.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question" aria-expanded="false">
+            <span>Teknologi apa saja yang bisa digunakan?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Kami menguasai berbagai teknologi modern: React, Vue, Next.js, Laravel, Django, Flutter, React Native,
+              Python, Node.js, AWS, GCP, Docker, TensorFlow, dan banyak lagi. Tech stack akan disesuaikan dengan
+              kebutuhan proyek.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            <span>Apakah bisa menerima proyek skripsi/tugas akhir?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Tentu! Kami memiliki divisi khusus Academic Solutions yang menangani proyek skripsi, tesis, dan paper.
+              Kami membantu dalam pengembangan sistem, analisis data, dan penulisan laporan sesuai standar akademik.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question" aria-expanded="false">
+            <span>Bagaimana cara memulai proyek dengan OneKlyx?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Mudah! Klik "Start a Project" di website ini, isi form dengan detail proyek Anda, dan kami akan
+              menghubungi dalam 24 jam. Alternatif, Anda bisa langsung WhatsApp kami untuk konsultasi gratis.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            <span>Apakah ada layanan maintenance setelah delivery?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Ya, kami menawarkan paket maintenance bulanan yang mencakup bug-fix, security updates, server monitoring,
+              dan minor feature updates. Harga mulai dari Rp 500K/bulan tergantung kompleksitas sistem.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question" aria-expanded="false">
+            <span>Berapa minimum budget untuk memulai proyek?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Budget bervariasi tergantung scope. Proyek skripsi mulai dari Rp 500K, website company profile dari Rp
+              2JT, dan web/mobile app dari Rp 5JT. Kami selalu terbuka untuk diskusi budget dan menyesuaikan scope yang
+              realistis.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT / FOOTER CTA SECTION
+       ============================================ -->
+  <section class="cta-section section" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="cta-content reveal">
+        <p class="section-eyebrow">Ready?</p>
+        <h2>Let's Build Something <span class="text-gradient">Extraordinary</span></h2>
+        <p>Ready to transform your ideas into reality? Let's talk.</p>
+        <div class="cta-buttons">
+          <a href="#order" class="btn btn-primary btn-lg" data-scroll-to="#order">
+            Start a Project <span class="arrow">→</span>
+          </a>
+          <a href="https://wa.me/62881080621723" target="_blank" class="btn btn-ghost btn-lg">
+            💬 WhatsApp Us
+          </a>
+          <a href="mailto:oneklyx.labs@gmail.com" class="btn btn-ghost btn-lg">
+            ✉ Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo oneklyx.png" alt="OneKlyx Logo" class="okx-logo-img">
+            <span>ONEKLYX</span>
+          </div>
+          <p class="tagline">Turning ideas into secure, scalable, and intelligent digital solutions. Building the
+            future, one project at a time.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/oneklyx.coding/" target="_blank" aria-label="Instagram" title="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/company/oneklyx" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="https://github.com/oneklyx" target="_blank" aria-label="GitHub" title="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </a>
+            <a href="https://wa.me/62881080621723" target="_blank" aria-label="WhatsApp" title="WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Mobile Application</a></li>
+            <li><a href="#services">Cloud & Infrastructure</a></li>
+            <li><a href="#services">AI & Automation</a></li>
+            <li><a href="#services">Cybersecurity</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:oneklyx.labs@gmail.com">oneklyx.labs@gmail.com</a></li>
+            <li><a href="https://wa.me/+62881080621723">+62 812 3456 7890</a></li>
+            <li><a href="#order">Start a Project</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OneKlyx. All rights reserved.</p>
+        <p style="font-family:var(--font-mono);font-size:12px;">Made with ❤️ in Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
+</html>

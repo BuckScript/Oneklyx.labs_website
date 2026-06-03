@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Logs
+logs/
+*.log
+
+# Runtime
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Uploads and user data
+uploads/
+data/*.json
+
+# Build outputs
+dist/
+build/
+
+# Others
+*.local
+.idea/
