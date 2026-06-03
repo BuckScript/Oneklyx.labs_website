@@ -240,7 +240,7 @@ module.exports = async (req, res) => {
           <p style="margin:5px 0 0 0;"><strong>Jenis Proyek:</strong> ${escapeHtml(projectType)}</p>
         </div>
         <p>Tim kami sedang meninjau kebutuhan Anda. Kami akan menghubungi Anda melalui WhatsApp atau email dalam waktu <strong>24 jam</strong> untuk membahas detail dan menjadwalkan konsultasi gratis.</p>
-        <p>Jika ada update cepat, silakan chat dengan kami langsung di WhatsApp dengan nomor referensi ini: <a href="https://wa.me/${process.env.WHATSAPP_PHONE_NUMBER || '6281234567890'}?text=Halo%20OneKlyx%2C%20nomor%20referensi%20pesanan%20saya%20adalah%20${referenceNumber}">Chat di WhatsApp</a>.</p>
+        <p>Jika ada update cepat, silakan chat dengan kami langsung di WhatsApp dengan nomor referensi ini: <a href="https://wa.me/${process.env.WHATSAPP_PHONE_NUMBER || '62881080621723'}?text=Halo%20OneKlyx%2C%20nomor%20referensi%20pesanan%20saya%20adalah%20${referenceNumber}">Chat di WhatsApp</a>.</p>
         <br>
         <p>Salam,</p>
         <p><strong>Tim OneKlyx</strong><br>Technology · AI · Cloud · Security</p>
